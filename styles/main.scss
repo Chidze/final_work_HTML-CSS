@@ -1,0 +1,1368 @@
+@import 'fonts/font';
+@import 'reset/reset';
+@import 'mixins/mixins';
+
+header {
+    width: 1440px;
+    height: 695px;
+    margin: auto;
+    background-image: url(./images/Background.png);
+    background-position: center;
+    background-size: 100% 100%;
+
+    .header-nav {
+        display: flex;
+        justify-content: flex-end;
+
+        &__log {
+            background: transparent;
+            border: none;
+            margin: 37px 20px 0px 0px;
+
+            &__text {
+                @include text('Montserrat', none, 14px, 17px, #FFFFFF);
+                text-decoration: none;
+            }
+        }
+
+        &__sign {
+            width: 90px;
+            height: 36px;
+            margin: 36px 292px 0 0;
+            @include button(transparent, 2px solid #FFFFFF, 40px);
+
+            &__text {
+                @include text('Montserrat', none, 14px, 17px, #FFFFFF);
+                text-decoration: none;
+            }
+        }
+
+    }
+
+    .dreamshare {
+        @include text('Montserrat_Bold', uppercase, 20px, 24px, #FFFFFF);
+        margin: -31px 0 0 246px;
+    }
+
+    .share-your-dream {
+        width: 470px;
+        @include text('Montserrat_Bold', uppercase, 52px, 63px, #FFFFFF);
+        text-align: center;
+        margin: 153px auto 28px;
+        ;
+    }
+
+    .find-partner {
+        @include text('Roboto_Light', none, 24px, 24.5px, #F7F3F2);
+        text-align: center;
+    }
+
+    .button-find {
+        width: 225px;
+        height: 40px;
+        @include button(#FF4E50, 1px solid #FF4E50, 40px);
+        margin: 35px 0 0 608px;
+
+        &__text {
+            @include text('Montserrat_Bold', none, 14px, 17px, #FFFFFF);
+            text-decoration: none;
+        }
+    }
+}
+
+
+.how-dreamshare-works {
+    &__steps {
+
+        &__text {
+            @include text('Montserrat_Bold', none, 26px, 32px, #444444);
+            text-align: center;
+            margin: 88px 0 36px 0;
+        }
+
+        &__pictures {
+            @include flex( flex, row, nowrap, center, center, center);
+            &__step_1,
+            &__step_2,
+            &__step_3 {
+                position: relative;
+                display: flex;
+                flex-flow: column;
+                flex-wrap: wrap;
+
+                &__image1,
+                &__image2,
+                &__image3 {
+                    width: 300px;
+                    height: 400px;
+                    margin: 0 10px 0 10px;
+                    background-position: center;
+                    background-size: 100% 100%;
+                }
+
+                &__image1 {
+                    background-image: url(./images/Step1image.png);
+                }
+
+                &__image2 {
+                    background-image: url(./images/Step2image.png);
+                }
+
+                &__image3 {
+                    background-image: url(./images/Step3image.png);
+                }
+            }
+
+            &__step_1,
+            &__step_3 {
+                &__item {
+                    display: flex;
+                    flex-direction: column;
+
+                    &__button {
+                        width: 70px;
+                        height: 20px;
+                        @include button(#FF4E50, 1px solid #FF4E50, 40px);
+                        position: absolute;
+                        top: 220px;
+                        left: 34px;
+
+                        &__text {
+                            @include text('Montserrat', uppercase, 10px, 12px, #FFFFFF);
+                            letter-spacing: 2px;
+                        }
+                    }
+
+                    &__sed {
+                        width: 250px;
+                        @include text('Montserrat_Bold', none, 24px, 26px, #FFFFFF);
+                        position: absolute;
+                        top: 262px;
+                        left: 34px;
+                    }
+
+                    &__quisque {
+                        width: 250px;
+                        @include text('Roboto_Light', none, 14px, 14px, #E3E3E3);
+                        position: absolute;
+                        top: 337px;
+                        left: 34px;
+                    }
+                }
+            }
+
+            &__step_2 {
+                &__item {
+                    display: flex;
+                    flex-direction: column;
+
+                    &__button {
+                        width: 70px;
+                        height: 20px;
+                        @include button(#FF4E50, 1px solid #FF4E50, 40px);
+                        position: absolute;
+                        top: 252px;
+                        left: 34px;
+
+                        &__text {
+                            @include text('Montserrat', uppercase, 10px, 12px, #FFFFFF);
+                            letter-spacing: 2px;
+                        }
+                    }
+
+                    &__morbi {
+                        width: 250px;
+                        @include text('Montserrat_Bold', none, 24px, 26px, #FFFFFF);
+                        position: absolute;
+                        top: 291px;
+                        left: 34px;
+                    }
+
+                    &__nulla {
+                        width: 250px;
+                        @include text('Roboto_Light', none, 14px, 14px, #E3E3E3);
+                        position: absolute;
+                        top: 337px;
+                        left: 34px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.meet-a-partner-for-your-best-holiday {
+    &__partner {
+        @include flex( flex, column, wrap, center, center, center);
+
+        &__text {
+            @include text('Montserrat_Bold', none, 26px, 32px, #444444);
+            text-align: center;
+            margin: 88px 0 0 0px;
+        }
+
+        &__people {
+            position: relative;
+            @include flex( flex, row, wrap, center, center, center);
+            &__bradley,
+            &__marie,
+            &__diana,
+            &__christopher {
+                width: 221px;
+                display: flex;
+                flex-flow: column;
+                margin: 0 10px 0 10px;
+                &__icon{
+                    width: 32px;
+                    height: 32px;
+                    background-size: 16px 16px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    position: absolute;
+                }
+                &__name {
+                    @include text('Montserrat_Bold', none, 14px, 17px, #444444);
+                    text-align: center;
+                }
+            }
+
+            &__bradley,
+            &__marie {
+                &__photo {
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 100%;
+                    margin: 16px 0 0 51px;
+                }
+
+                &__info {
+                    @include text('Roboto_Light', none, 14px, 14px, #666666);
+                    width: 221px;
+                    text-align: center;
+                    margin: 22px 0px 0px 0px;
+                }
+            }
+
+            &__bradley {
+                &__icon {
+                    @include button(#FF4E50, 4px solid #FFFFFF, 100%);
+                    background-image: url(./icons/music2.png);
+                    top: 119px;
+                    left: 147px;
+                }
+                &__name {
+                    margin: 18px 0 0 0px;
+                }
+            }
+
+            &__marie {
+                &__icon {
+                    @include button(#19D4CA, 4px solid #FFFFFF, 100%);
+                    background-image: url(./icons/brush.png);
+                    top: 119px;
+                    left: 386px;
+                }
+                &__name {
+                    margin: 18px 0 0 1px;
+                }
+            }
+
+            &__diana {
+                &__photo {
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 100%;
+                    margin: 36px 0 0 49px;
+                }
+
+                &__info {
+                    width: 221px;
+                    @include text('Roboto_Light', none, 14px, 14px, #666666);
+                    text-align: center;
+                    margin: 28px 0px 0px 4px;
+                }
+
+                &__icon {
+                    @include button(#FFA710, 4px solid #FFFFFF, 100%);
+                    background-image: url(./icons/camera.png);
+                    top: 119px;
+                    left: 626px;
+                }
+                &__name {
+                    margin: 18px 0 0 1px;
+                }
+            }
+
+            &__christopher {
+                &__photo {
+                    width: 120px;
+                    height: 120px;
+                    border-radius: 100%;
+                    margin: 36px 0 0 49px;
+                }
+                &__name {
+                    margin: 18px 3px 0 0px;
+                }
+
+                &__info {
+                    width: 221px;
+                    @include text('Roboto_Light', none, 14px, 14px, #666666);
+                    text-align: center;
+                    margin: 27px 0px 0px -2px;
+                }
+
+                &__icon {
+                    @include button(#667DF3, 4px solid #FFFFFF, 100%);
+                    background-image: url(./icons/Shape.png);
+                    top: 119px;
+                    left: 866px;
+                }
+            }
+        }
+
+        &__button {
+            width: 179px;
+            height: 40px;
+            @include button(#FFFFFF, 2px solid #FF4E50, 40px);
+            margin: 35px 0 0 3px;
+
+            &__text {
+                @include text('Montserrat_Bold', none, 14px, 17px, #FF4E50);
+                text-align: center;
+            }
+        }
+    }
+}
+
+
+.discover-holiday-activity-ideas {
+    &__discover {
+        @include flex( flex, column, wrap, center, center, center);
+
+        &__text {
+            @include text('Montserrat_Bold', none, 26px, 32px, #444444);
+            text-align: center;
+            margin: 90px 0 35px 0;
+        }
+
+        &__ideas {
+            width: 960px;
+            @include flex( flex, row, wrap, center, center, center);
+
+            &__sport,
+            &__wellness,
+            &__extreme,
+            &__games,
+            &__trevelling {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+
+                &__photo {
+                    width: 300px;
+                    height: 310px;
+                    margin: 0 10px 19px 10px;
+                }
+
+                &__text {
+                    position: absolute;
+                    @include text('Montserrat_Bold', none, 22px, 27px, #FFFFFF);
+                    text-align: center;
+                    top: 142px;
+                    width: 238px;
+                    left: 40px;
+                }
+            }
+
+            &__sport {
+                &__photo {
+                    background-image: url(./images/sport.png);
+                }
+            }
+
+            &__wellness {
+                &__photo {
+                    background-image: url(./images/well.png);
+                }
+            }
+
+            &__extreme {
+                &__photo {
+                    background-image: url(./images/extreme.png);
+                }
+
+                &__text {
+                    position: absolute;
+                    top: 128px;
+                    left: 66px;
+                    @include text('Montserrat_Bold', none, 22px, 27px, #FFFFFF);
+                    width: 187px;
+                    text-align: center;
+                }
+            }
+
+            &__games {
+                &__photo {
+                    background-image: url(./images/games.png);
+                }
+            }
+
+            &__culture,
+            &__enjoment {
+                display: flex;
+                flex-direction: column;
+                position: relative;
+
+                &__photo {
+                    width: 620px;
+                    height: 310px;
+                    margin: 0 10px 19px 10px;
+                }
+
+                &__text {
+                    position: absolute;
+                    top: 144px;
+                    left: 182px;
+                    @include text('Montserrat_Bold', none, 22px, 27px, #FFFFFF);
+                    width: 277px;
+                    text-align: center;
+                }
+            }
+
+            &__culture {
+                &__photo {
+                    background-image: url(./images/culture.png);
+                }
+            }
+
+            &__enjoment {
+                &__photo {
+                    background-image: url(./images/enjoment.png);
+                }
+            }
+
+            &__trevelling {
+                &__photo {
+                    background-image: url(./images/treveling.png);
+                }
+            }
+        }
+    }
+
+    &__crate {
+        width: 600px;
+        @include flex( flex, row, wrap, center, center, center);
+        margin: auto;
+
+        &__text {
+            @include text('Montserrat_Bold', none, 26px, 32px, #444444);
+            text-align: center;
+            margin: 70px 2px 55px 0;
+        }
+
+        &__question {
+            width: 400px;
+            @include text('Roboto_Light', none, 18px, 14px, #666666);
+            text-align: center;
+            margin: 0 0px 25px 0;
+        }
+
+        &__input {
+            width: 283px;
+            height: 38px;
+            @include button(#FFFFFF, 1px solid #D4D4D4, 2px);
+            padding: 0 0 0 12px;
+            margin: 0 0 100px 0;
+        }
+
+        ::placeholder {
+            @include text('Roboto_Light', none, 14px, 16px, #999999);
+        }
+
+        &__button {
+            width: 170px;
+            height: 40px;
+            @include button(#FF4E50, 1px solid #FF4E50, 40px);
+            margin: -10px 0 93px 13px;
+
+            &__text {
+                @include text('Montserrat_Bold', none, 14px, 17px, #FFFFFF);
+            }
+        }
+    }
+
+}
+
+
+
+footer {
+    height: 224px;
+    padding: 38px 0 0 0;
+    @include flex( flex, column, wrap, center, center, center);
+    border-top: 2px solid #FF4E50;
+
+    .drid {
+        display: grid;
+        grid-template-columns: 243px 237px 361px 107px;
+        grid-template-rows: 30px 198px;
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                text-decoration: none;
+                @include text('Roboto_Light', none, 14px, 26px, #999999);
+            }
+        }
+
+        &__pink_dreamshare {
+            @include text('Montserrat', uppercase, 16px, 20px, #FF4E50);
+            margin: 0 0 0 3px;
+        }
+
+        &__company,
+        &__partners {
+            @include text('Montserrat_Bold', none, 14px, 17px, #444444);
+        }
+        &__partners{
+            margin: 0 0 0 3px;
+        }
+
+        &__designed_by {
+            @include text('Montserrat_Bold', uppercase, 10px, 12px, #CCCCCC);
+            margin: 0 0 0 12px;
+            letter-spacing: 2px;
+        }
+
+        &__logo {
+            width: 110px;
+            height: 24px;
+            background-image: url(./images/logo.png);
+            background-size: 100% 100%;
+            margin: -10px 0 0 -8px;
+    }
+}
+}
+
+@media screen and (min-width: 767px) and (max-width: 1439px) {
+    header {
+        width: 768px;
+        height: 700px;
+        background-size: cover;
+
+        .header-nav {
+            &__log {
+                margin: 40px 19px 0px 0px;
+            }
+
+            &__sign {
+                margin: 40px 50px 0 0;
+            }
+
+        }
+
+        .dreamshare {
+            margin: -30px 0 0 48px;
+        }
+
+        .share-your-dream {
+            margin: 153px auto 28px;
+        }
+
+        .button-find {
+            margin: 35px 0 0 272px;
+        }
+    }
+
+    .how-dreamshare-works {
+        &__steps {
+            &__text {
+                @include text('Montserrat_Bold', none, 22px, 27px, #444444);
+                margin: 94px 0 35px 0;
+            }
+
+            &__pictures {
+
+                &__step_1,
+                &__step_2,
+                &__step_3 {
+
+                    &__image1,
+                    &__image2,
+                    &__image3 {
+                        width: 236px;
+                        height: 400px;
+                    }
+
+                    &__image1 {
+                        background-image: url(./images/step-1medium.png);
+                    }
+
+                    &__image2 {
+                        background-image: url(./images/step2-medium.png);
+                    }
+
+                    &__image3 {
+                        background-image: url(./images/step3_medium.png);
+                    }
+                }
+
+                &__step_1,
+                &__step_3 {
+                    &__item {
+                        &__button {
+                            top: 206px;
+                            left: 31px;
+                        }
+
+                        &__sed {
+                            width: 196px;
+                            @include text('Montserrat_Bold', none, 24px, 14px, #FFFFFF);
+                            top: 272px;
+                            left: 31px;
+                        }
+
+                        &__quisque {
+                            width: 196px;
+                            @include text('Roboto_Light', none, 14px, 14px, #E3E3E3);
+                            position: absolute;
+                            top: 327px;
+                            left: 31px;
+                        }
+                    }
+                }
+
+                &__step_2 {
+                    &__item {
+                        &__button {
+                            top: 257px;
+                            left: 31px;
+                        }
+
+                        &__morbi {
+                            width: 196px;
+                            @include text('Montserrat_Bold', none, 24px, 14px, #FFFFFF);
+                            top: 291px;
+                            left: 31px;
+                        }
+
+                        &__nulla {
+                            width: 196px;
+                            @include text('Roboto_Light', none, 14px, 14px, #E3E3E3);
+                            position: absolute;
+                            top: 341px;
+                            left: 31px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .meet-a-partner-for-your-best-holiday {
+        &__partner {
+            &__text {
+                @include text('Montserrat_Bold', none, 22px, 27px, #444444);
+                margin: 94px 0 0 0px;
+            }
+
+            &__people {
+                flex-direction: column;
+                flex-wrap: wrap;
+                height: 521px;
+                width: 492px;
+
+                &__bradley,
+                &__marie,
+                &__diana,
+                &__christopher {
+                    width: 236px;
+                    height: 205px;
+                    display: flex;
+                    flex-flow: column;
+                    margin: 0 10px 0 10px;
+
+                    &__name {
+                        margin: 17px 0 27px 0;
+                    }
+                }
+
+                &__bradley {
+                    margin: 0 0 57px 0;
+
+                    &__photo {
+                        margin: 9px 0 0 58px;
+                    }
+
+                    &__icon {
+                        top: 119px;
+                        left: 143px;
+                    }
+
+                    &__info {
+                        width: 236px;
+                        margin: -5px 0px 0px 0px;
+                    }
+                }
+
+                &__marie {
+                    &__photo {
+                        margin: 5px 0 0 58px;
+                    }
+
+                    &__info {
+                        width: 236px;
+                        margin: -5px 0px 0px 0px;
+                    }
+
+                    &__icon {
+                        top: 378px;
+                        left: 142px;
+                    }
+                }
+
+                &__diana {
+                    margin: 0 0 57px 0;
+
+                    &__photo {
+                        margin: 9px 0 0 58px;
+                    }
+
+                    &__info {
+                        width: 236px;
+                        margin: 0px 0px 0px 0px;
+                    }
+
+                    &__icon {
+                        top: 119px;
+                        left: 399px;
+                    }
+                }
+
+                &__christopher {
+                    &__photo {
+                        margin: 5px 0 0 58px;
+                    }
+
+                    &__info {
+                        width: 238px;
+                        margin: -5px 0px 0px 0px;
+                    }
+
+                    &__icon {
+                        top: 379px;
+                        left: 399px;
+                    }
+                }
+            }
+
+            &__button {
+                margin: 19px 0 0 4px;
+            }
+        }
+    }
+
+    .discover-holiday-activity-ideas {
+        &__discover {
+            &__text {
+                @include text('Montserrat_Bold', none, 22px, 27px, #444444);
+                margin: 94px 0 35px 0;
+            }
+
+            &__ideas {
+                width: 765px;
+
+                &__sport,
+                &__wellness,
+                &__extreme,
+                &__games,
+                &__trevelling {
+                    &__photo {
+                        width: 236px;
+                        height: 310px;
+                        margin: 0px 0px 0px 0px;
+                    }
+                }
+
+                &__sport {
+                    &__photo {
+                        background-image: url(./images/sport-medium.png);
+                        margin: 0px 20px 20px 0px;
+                    }
+
+                    &__text {
+                        top: 114px;
+                        width: 143px;
+                        left: 48px;
+                    }
+                }
+
+                &__wellness {
+                    &__photo {
+                        background-image: url(./images/wellness-medium.png);
+                        margin: 0px 0px 20px 0px;
+                    }
+
+                    &__text {
+                        top: 127px;
+                        width: 158px;
+                        left: 40px;
+                    }
+                }
+
+                &__extreme {
+                    &__photo {
+                        background-image: url(./images/extreme-medium.png);
+                        margin: 0px 0px 20px 20px;
+                    }
+
+                    &__text {
+                        top: 128px;
+                        left: 25px;
+                        width: 226px;
+                    }
+                }
+
+                &__games {
+                    &__photo {
+                        background-image: url(./images/games-medium.png);
+                        margin: 0px 20px 20px 0px;
+                    }
+
+                    &__text {
+                        top: 141px;
+                        left: 5px;
+                        width: 226px;
+                    }
+                }
+
+                &__culture,
+                &__enjoment {
+                    display: flex;
+                    flex-direction: column;
+                    position: relative;
+
+                    &__photo {
+                        width: 492px;
+                        height: 310px;
+                        margin: 0px 0px 20px 0px;
+                    }
+
+                    &__text {
+                        top: 141px;
+                        left: 110px;
+                        width: 277px;
+
+                    }
+                }
+
+                &__culture {
+                    &__photo {
+                        background-image: url(./images/culture-medium.png);
+                    }
+                }
+
+                &__enjoment {
+                    &__photo {
+                        background-image: url(./images/enjoy-medium.png);
+                    }
+                }
+
+                &__trevelling {
+                    &__photo {
+                        background-image: url(./images/traveling-medium.png);
+                        margin: -20px 0px 0px 20px;
+                    }
+
+                    &__text {
+                        top: 121px;
+                        width: 238px;
+                        left: 20px;
+                    }
+                }
+            }
+        }
+
+        &__crate {
+            width: 490px;
+
+            &__text {
+                @include text('Montserrat_Bold', none, 22px, 27px, #444444);
+                margin: 73px -2px 54px 0;
+            }
+
+            &__question {
+                width: 400px;
+                margin: 0 -5px 25px 0;
+            }
+
+            &__input {
+                width: 282px;
+                height: 38px;
+                padding: 0 0 0 15px;
+            }
+
+            &__button {
+                margin: 0 0 100px 15px;
+            }
+        }
+
+    }
+
+    footer {
+        padding: 38px 0 0 0;
+
+        .drid {
+            display: grid;
+            grid-template-columns: 207px 205px 211px 120px;
+            grid-template-rows: 30px 198px;
+
+            &__list{
+                margin: 0 0 0 48px;
+            }
+        
+            &__pink_dreamshare {
+                margin: 0 0 0 27px;
+            }
+            &__company{
+                margin: 0 0 0 48px;
+            }
+            &__partners{
+                margin: 0 0 0 12px;
+            }
+        
+            &__designed_by {
+                margin: 1px 0 0 13px;
+                letter-spacing: 1px;
+            }
+        
+            &__logo {
+                margin: -11px 0 0 -17px;
+            }
+        }
+
+    }
+}
+
+
+@media screen and (min-width: 250px) and (max-width: 767px) {
+    header {
+        width: 320px;
+        height: 540px;
+        background-image: url(./images/Backgroundmobile.png);
+
+        .header-nav {
+            &__log {
+                margin: 22px 19px 0px 0px;
+            }
+
+            &__sign {
+                margin: 20px 84px 0 0;
+            }
+        }
+
+        .dreamshare {
+            margin: 97px 0 0 95px;
+        }
+
+        .share-your-dream {
+            width: 272px;
+            @include text('Montserrat_Bold', uppercase, 30px, 37px, #FFFFFF);
+            margin: 26px 20px 8px 32px;
+            ;
+        }
+
+        .find-partner {
+            width: 272px;
+            @include text('Roboto_Light', none, 18px, 24.5px, #F7F3F2);
+            margin: 0 0px 0 33px;
+        }
+
+        .button-find {
+            width: 280px;
+            height: 40px;
+            margin: 15px 0 0 30px;
+        }
+    }
+
+    .how-dreamshare-works {
+        &__steps {
+            &__text {
+                @include text('Montserrat_Bold', none, 22px, 27px, #444444);
+                margin: 34px 0 15px 0;
+            }
+
+            &__pictures {
+                flex-direction: column;
+
+                &__step_1,
+                &__step_2,
+                &__step_3 {
+                    position: relative;
+                    display: flex;
+                    flex-flow: column;
+                    flex-wrap: wrap;
+
+                    &__image1,
+                    &__image2,
+                    &__image3 {
+                        height: 240px;
+                        margin: 0 0px 10px 0px;
+                    }
+
+                    &__image1 {
+                        background-image: url(./images/step1mobile.png);
+                    }
+
+                    &__image2 {
+                        background-image: url(./images/step2mobile.png);
+                    }
+
+                    &__image3 {
+                        background-image: url(./images/step3mobile.png);
+                    }
+                }
+
+                &__step_1,
+                &__step_3 {
+                    &__item {
+                        &__button {
+                            top: 65px;
+                            left: 19px;
+                        }
+
+                        &__sed {
+                            @include text('Montserrat_Bold', none, 24px, 14px, #FFFFFF);
+                            top: 130px;
+                            left: 19px;
+                        }
+
+                        &__quisque {
+                            top: 183px;
+                            left: 19px;
+                        }
+                    }
+                }
+
+                &__step_2 {
+                    &__item {
+                        &__button {
+                            top: 96px;
+                            left: 19px;
+                        }
+
+                        &__morbi {
+                            top: 140px;
+                            left: 19px;
+                        }
+
+                        &__nulla {
+                            top: 183px;
+                            left: 19px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+    .meet-a-partner-for-your-best-holiday {
+        &__partner {
+            &__text {
+                @include text('Montserrat_Bold', none, 22px, 27px, #444444);
+                margin: 26px 0 0 0px;
+            }
+
+            &__people {
+                flex-direction: column;
+
+                &__bradley,
+                &__marie,
+                &__diana,
+                &__christopher {
+                    width: 236px;
+                    display: flex;
+                    flex-flow: column;
+                    margin: 0 0 0px 0;
+
+                    &__name {
+                        margin: 18px 0 0 -2px;
+                    }
+                }
+
+                &__bradley,
+                &__marie {
+                    &__photo {
+                        margin: 14px 0 0 57px;
+                    }
+
+                    &__info {
+                        width: 246px;
+                        margin: 22px 0px 0px -6px;
+                    }
+                }
+
+                &__bradley {
+                    order: 1;
+
+                    &__icon {
+                        top: 98px;
+                        left: 141px;
+                    }
+                }
+
+                &__marie {
+                    order: 3;
+
+                    &__icon {
+                        top: 559px;
+                        left: 141px;
+                    }
+
+                    &__info {
+                        width: 238px;
+                        margin: 23px 0px 0px -2px;
+                    }
+                }
+
+                &__diana {
+                    order: 2;
+
+                    &__photo {
+                        margin: 16px 0 0 57px;
+                    }
+
+                    &__info {
+                        width: 236px;
+                        margin: 28px 0px 0px -1px;
+                    }
+
+                    &__icon {
+                        top: 319px;
+                        left: 141px;
+                    }
+                }
+
+                &__christopher {
+                    order: 4;
+
+                    &__photo {
+                        margin: 16px 0 0 57px;
+                    }
+
+                    &__info {
+                        width: 236px;
+                        margin: 22px 0px 0px -1px;
+                    }
+
+                    &__icon {
+                        top: 781px;
+                        left: 141px;
+                    }
+                }
+            }
+
+            &__button {
+                width: 280px;
+                margin: 37px 0 0 1px;
+            }
+        }
+    }
+
+
+    .discover-holiday-activity-ideas {
+        &__discover {
+            &__text {
+                width: 280px;
+                @include text('Montserrat_Bold', none, 22px, 27px, #444444);
+                margin: 35px 0 33px 0;
+            }
+
+            &__ideas {
+                width: 300px;
+                flex-direction: column;
+
+                &__sport,
+                &__wellness,
+                &__extreme,
+                &__games,
+                &__trevelling,
+                &__culture,
+                &__enjoment {
+                    &__photo {
+                        width: 300px;
+                        height: 120px;
+                        margin: 0 0px 10px 0px;
+                    }
+                }
+
+                &__sport {
+                    &__photo {
+                        background-image: url(./images/sportmobile.png);
+                    }
+
+                    &__text {
+                        width: 206px;
+                        top: 20px;
+                        left: 46px;
+                    }
+                }
+
+                &__wellness {
+                    &__photo {
+                        background-image: url(./images/wellnessmobile.png);
+                    }
+
+                    &__text {
+                        width: 206px;
+                        top: 32px;
+                        left: 46px;
+                    }
+                }
+
+                &__extreme {
+                    &__photo {
+                        background-image: url(./images/extrememobile.png);
+                    }
+
+                    &__text {
+                        top: 33px;
+                        left: 56px;
+                        width: 187px;
+                    }
+                }
+
+                &__games {
+                    &__photo {
+                        background-image: url(./images/gamesmobile.png);
+                    }
+
+                    &__text {
+                        top: 47px;
+                        width: 199px;
+                        left: 49px;
+                    }
+                }
+
+                &__culture {
+                    &__photo {
+                        background-image: url(./images/culturemobile.png);
+                    }
+
+                    &__text {
+                        top: 47px;
+                        left: 11px;
+                        width: 277px;
+                    }
+
+                }
+
+                &__enjoment {
+                    &__photo {
+                        background-image: url(./images/enjoymobile.png);
+                    }
+
+                    &__text {
+                        top: 46px;
+                        left: 11px;
+                        width: 277px;
+                    }
+                }
+
+                &__trevelling {
+                    &__photo {
+                        background-image: url(./images/trevelmobile.png);
+                    }
+
+                    &__text {
+                        top: 46px;
+                        width: 238px;
+                        left: 31px;
+                    }
+                }
+            }
+        }
+
+        &__crate {
+            width: 280px;
+
+            &__text {
+                @include text('Montserrat_Bold', none, 22px, 27px, #444444);
+                margin: 24px 2px 20px 0;
+            }
+
+            &__question {
+                width: 280px;
+                margin: 0 -1px 14px 0;
+            }
+
+            &__input {
+                width: 280px;
+                height: 38px;
+                padding: 4px 0 0 14px;
+            }
+
+            &__button {
+                width: 280px;
+                margin: 7px auto 42px;
+                padding: 5px 0 0 8px;
+            }
+        }
+
+    }
+
+    footer {
+        height: 226px;
+
+        padding: 0px 0 0px 0;
+
+        .drid {
+            grid-template-columns: 226px;
+            grid-template-rows: 25px 17px 52px 17px 0px 14px 0px 24px;
+
+            &__list {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                order: 3;
+                width: 250px;
+                margin: -79px 0 28px -15px;
+
+                a {
+                    margin: 0 5px 0 9px;
+                }
+            }
+
+            &__pink_dreamshare {
+                margin: -61px 0 0 53px;
+                order: 1;
+            }
+
+            &__company {
+                margin: -81px 0 0 76px;
+                order: 2;
+            }
+
+            &__partners {
+                order: 4;
+                margin: -21px 0 0 80px;
+            }
+
+            &__designed_by {
+                order: 5;
+                margin: -3px 0 0 72px;
+                letter-spacing: 1px;
+            }
+
+            &__logo {
+                order: 6;
+                margin: 14px 0 0 57px;
+            }
+        }
+    }
+}

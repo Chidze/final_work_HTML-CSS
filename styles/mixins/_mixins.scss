@@ -1,0 +1,20 @@
+@mixin text( $f, $t, $s ,$h, $c){
+    font-family: $f;
+    text-transform: $t;
+    font-size: $s;
+    line-height: $h;
+    color: $c;
+}
+@mixin button( $bc, $b, $br){
+    background-color: $bc;
+    border: $b;
+    border-radius: $br;
+}
+@mixin flex( $f, $d, $w, $j, $a, $ai){
+    display: $f;
+    flex-direction: $d;
+    flex-wrap: $w;
+    justify-content: $j;
+    align-content: $a;
+    align-items: $ai;
+}

@@ -1,0 +1,1241 @@
+@font-face {
+  font-family: "Montserrat";
+  src: url(/styles/fonts/Montserrat/static/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: "Montserrat_Bold";
+  src: url(/styles/fonts/Montserrat/static/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: "Roboto_Light";
+  src: url(/styles/fonts/Roboto/Roboto-Light.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+header {
+  width: 1440px;
+  height: 695px;
+  margin: auto;
+  background-image: url(./images/Background.png);
+  background-position: center;
+  background-size: 100% 100%;
+}
+header .header-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+header .header-nav__log {
+  background: transparent;
+  border: none;
+  margin: 37px 20px 0px 0px;
+}
+header .header-nav__log__text {
+  font-family: "Montserrat";
+  text-transform: none;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+header .header-nav__sign {
+  width: 90px;
+  height: 36px;
+  margin: 36px 292px 0 0;
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  border-radius: 40px;
+}
+header .header-nav__sign__text {
+  font-family: "Montserrat";
+  text-transform: none;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+header .dreamshare {
+  font-family: "Montserrat_Bold";
+  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 24px;
+  color: #FFFFFF;
+  margin: -31px 0 0 246px;
+}
+header .share-your-dream {
+  width: 470px;
+  font-family: "Montserrat_Bold";
+  text-transform: uppercase;
+  font-size: 52px;
+  line-height: 63px;
+  color: #FFFFFF;
+  text-align: center;
+  margin: 153px auto 28px;
+}
+header .find-partner {
+  font-family: "Roboto_Light";
+  text-transform: none;
+  font-size: 24px;
+  line-height: 24.5px;
+  color: #F7F3F2;
+  text-align: center;
+}
+header .button-find {
+  width: 225px;
+  height: 40px;
+  background-color: #FF4E50;
+  border: 1px solid #FF4E50;
+  border-radius: 40px;
+  margin: 35px 0 0 608px;
+}
+header .button-find__text {
+  font-family: "Montserrat_Bold";
+  text-transform: none;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.how-dreamshare-works__steps__text {
+  font-family: "Montserrat_Bold";
+  text-transform: none;
+  font-size: 26px;
+  line-height: 32px;
+  color: #444444;
+  text-align: center;
+  margin: 88px 0 36px 0;
+}
+.how-dreamshare-works__steps__pictures {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.how-dreamshare-works__steps__pictures__step_1, .how-dreamshare-works__steps__pictures__step_2, .how-dreamshare-works__steps__pictures__step_3 {
+  position: relative;
+  display: flex;
+  flex-flow: column;
+  flex-wrap: wrap;
+}
+.how-dreamshare-works__steps__pictures__step_1__image1, .how-dreamshare-works__steps__pictures__step_1__image2, .how-dreamshare-works__steps__pictures__step_1__image3, .how-dreamshare-works__steps__pictures__step_2__image1, .how-dreamshare-works__steps__pictures__step_2__image2, .how-dreamshare-works__steps__pictures__step_2__image3, .how-dreamshare-works__steps__pictures__step_3__image1, .how-dreamshare-works__steps__pictures__step_3__image2, .how-dreamshare-works__steps__pictures__step_3__image3 {
+  width: 300px;
+  height: 400px;
+  margin: 0 10px 0 10px;
+  background-position: center;
+  background-size: 100% 100%;
+}
+.how-dreamshare-works__steps__pictures__step_1__image1, .how-dreamshare-works__steps__pictures__step_2__image1, .how-dreamshare-works__steps__pictures__step_3__image1 {
+  background-image: url(./images/Step1image.png);
+}
+.how-dreamshare-works__steps__pictures__step_1__image2, .how-dreamshare-works__steps__pictures__step_2__image2, .how-dreamshare-works__steps__pictures__step_3__image2 {
+  background-image: url(./images/Step2image.png);
+}
+.how-dreamshare-works__steps__pictures__step_1__image3, .how-dreamshare-works__steps__pictures__step_2__image3, .how-dreamshare-works__steps__pictures__step_3__image3 {
+  background-image: url(./images/Step3image.png);
+}
+.how-dreamshare-works__steps__pictures__step_1__item, .how-dreamshare-works__steps__pictures__step_3__item {
+  display: flex;
+  flex-direction: column;
+}
+.how-dreamshare-works__steps__pictures__step_1__item__button, .how-dreamshare-works__steps__pictures__step_3__item__button {
+  width: 70px;
+  height: 20px;
+  background-color: #FF4E50;
+  border: 1px solid #FF4E50;
+  border-radius: 40px;
+  position: absolute;
+  top: 220px;
+  left: 34px;
+}
+.how-dreamshare-works__steps__pictures__step_1__item__button__text, .how-dreamshare-works__steps__pictures__step_3__item__button__text {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 12px;
+  color: #FFFFFF;
+  letter-spacing: 2px;
+}
+.how-dreamshare-works__steps__pictures__step_1__item__sed, .how-dreamshare-works__steps__pictures__step_3__item__sed {
+  width: 250px;
+  font-family: "Montserrat_Bold";
+  text-transform: none;
+  font-size: 24px;
+  line-height: 26px;
+  color: #FFFFFF;
+  position: absolute;
+  top: 262px;
+  left: 34px;
+}
+.how-dreamshare-works__steps__pictures__step_1__item__quisque, .how-dreamshare-works__steps__pictures__step_3__item__quisque {
+  width: 250px;
+  font-family: "Roboto_Light";
+  text-transform: none;
+  font-size: 14px;
+  line-height: 14px;
+  color: #E3E3E3;
+  position: absolute;
+  top: 337px;
+  left: 34px;
+}
+.how-dreamshare-works__steps__pictures__step_2__item {
+  display: flex;
+  flex-direction: column;
+}
+.how-dreamshare-works__steps__pictures__step_2__item__button {
+  width: 70px;
+  height: 20px;
+  background-color: #FF4E50;
+  border: 1px solid #FF4E50;
+  border-radius: 40px;
+  position: absolute;
+  top: 252px;
+  left: 34px;
+}
+.how-dreamshare-works__steps__pictures__step_2__item__button__text {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 12px;
+  color: #FFFFFF;
+  letter-spacing: 2px;
+}
+.how-dreamshare-works__steps__pictures__step_2__item__morbi {
+  width: 250px;
+  font-family: "Montserrat_Bold";
+  text-transform: none;
+  font-size: 24px;
+  line-height: 26px;
+  color: #FFFFFF;
+  position: absolute;
+  top: 291px;
+  left: 34px;
+}
+.how-dreamshare-works__steps__pictures__step_2__item__nulla {
+  width: 250px;
+  font-family: "Roboto_Light";
+  text-transform: none;
+  font-size: 14px;
+  line-height: 14px;
+  color: #E3E3E3;
+  position: absolute;
+  top: 337px;
+  left: 34px;
+}
+
+.meet-a-partner-for-your-best-holiday__partner {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.meet-a-partner-for-your-best-holiday__partner__text {
+  font-family: "Montserrat_Bold";
+  text-transform: none;
+  font-size: 26px;
+  line-height: 32px;
+  color: #444444;
+  text-align: center;
+  margin: 88px 0 0 0px;
+}
+.meet-a-partner-for-your-best-holiday__partner__people {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.meet-a-partner-for-your-best-holiday__partner__people__bradley, .meet-a-partner-for-your-best-holiday__partner__people__marie, .meet-a-partner-for-your-best-holiday__partner__people__diana, .meet-a-partner-for-your-best-holiday__partner__people__christopher {
+  width: 221px;
+  display: flex;
+  flex-flow: column;
+  margin: 0 10px 0 10px;
+}
+.meet-a-partner-for-your-best-holiday__partner__people__bradley__icon, .meet-a-partner-for-your-best-holiday__partner__people__marie__icon, .meet-a-partner-for-your-best-holiday__partner__people__diana__icon, .meet-a-partner-for-your-best-holiday__partner__people__christopher__icon {
+  width: 32px;
+  height: 32px;
+  background-size: 16px 16px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+.meet-a-partner-for-your-best-holiday__partner__people__bradley__name, .meet-a-partner-for-your-best-holiday__partner__people__marie__name, .meet-a-partner-for-your-best-holiday__partner__people__diana__name, .meet-a-partner-for-your-best-holiday__partner__people__christopher__name {
+  font-family: "Montserrat_Bold";
+  text-transform: none;
+  font-size: 14px;
+  line-height: 17px;
+  color: #444444;
+  text-align: center;
+}
+.meet-a-partner-for-your-best-holiday__partner__people__bradley__photo, .meet-a-partner-for-your-best-holiday__partner__people__marie__photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  margin: 16px 0 0 51px;
+}
+.meet-a-partner-for-your-best-holiday__partner__people__bradley__info, .meet-a-partner-for-your-best-holiday__partner__people__marie__info {
+  font-family: "Roboto_Light";
+  text-transform: none;
+  font-size: 14px;
+  line-height: 14px;
+  color: #666666;
+  width: 221px;
+  text-align: center;
+  margin: 22px 0px 0px 0px;
+}
+.meet-a-partner-for-your-best-holiday__partner__people__bradley__icon {
+  background-color: #FF4E50;
+  border: 4px solid #FFFFFF;
+  border-radius: 100%;
+  background-image: url(./icons/music2.png);
+  top: 119px;
+  left: 147px;
+}
+.meet-a-partner-for-your-best-holiday__partner__people__bradley__name {
+  margin: 18px 0 0 0px;
+}
+.meet-a-partner-for-your-best-holiday__partner__people__marie__icon {
+  background-color: #19D4CA;
+  border: 4px solid #FFFFFF;
+  border-radius: 100%;
+  background-image: url(./icons/brush.png);
+  top: 119px;
+  left: 386px;
+}
+.meet-a-partner-for-your-best-holiday__partner__people__marie__name {
+  margin: 18px 0 0 1px;
+}
+.meet-a-partner-for-your-best-holiday__partner__people__diana__photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  margin: 36px 0 0 49px;
+}
+.meet-a-partner-for-your-best-holiday__partner__people__diana__info {
+  width: 221px;
+  font-family: "Roboto_Light";
+  text-transform: none;
+  font-size: 14px;
+  line-height: 14px;
+  color: #666666;
+  text-align: center;
+  margin: 28px 0px 0px 4px;
+}
+.meet-a-partner-for-your-best-holiday__partner__people__diana__icon {
+  background-color: #FFA710;
+  border: 4px solid #FFFFFF;
+  border-radius: 100%;
+  background-image: url(./icons/camera.png);
+  top: 119px;
+  left: 626px;
+}
+.meet-a-partner-for-your-best-holiday__partner__people__diana__name {
+  margin: 18px 0 0 1px;
+}
+.meet-a-partner-for-your-best-holiday__partner__people__christopher__photo {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  margin: 36px 0 0 49px;
+}
+.meet-a-partner-for-your-best-holiday__partner__people__christopher__name {
+  margin: 18px 3px 0 0px;
+}
+.meet-a-partner-for-your-best-holiday__partner__people__christopher__info {
+  width: 221px;
+  font-family: "Roboto_Light";
+  text-transform: none;
+  font-size: 14px;
+  line-height: 14px;
+  color: #666666;
+  text-align: center;
+  margin: 27px 0px 0px -2px;
+}
+.meet-a-partner-for-your-best-holiday__partner__people__christopher__icon {
+  background-color: #667DF3;
+  border: 4px solid #FFFFFF;
+  border-radius: 100%;
+  background-image: url(./icons/Shape.png);
+  top: 119px;
+  left: 866px;
+}
+.meet-a-partner-for-your-best-holiday__partner__button {
+  width: 179px;
+  height: 40px;
+  background-color: #FFFFFF;
+  border: 2px solid #FF4E50;
+  border-radius: 40px;
+  margin: 35px 0 0 3px;
+}
+.meet-a-partner-for-your-best-holiday__partner__button__text {
+  font-family: "Montserrat_Bold";
+  text-transform: none;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FF4E50;
+  text-align: center;
+}
+
+.discover-holiday-activity-ideas__discover {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.discover-holiday-activity-ideas__discover__text {
+  font-family: "Montserrat_Bold";
+  text-transform: none;
+  font-size: 26px;
+  line-height: 32px;
+  color: #444444;
+  text-align: center;
+  margin: 90px 0 35px 0;
+}
+.discover-holiday-activity-ideas__discover__ideas {
+  width: 960px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+.discover-holiday-activity-ideas__discover__ideas__sport, .discover-holiday-activity-ideas__discover__ideas__wellness, .discover-holiday-activity-ideas__discover__ideas__extreme, .discover-holiday-activity-ideas__discover__ideas__games, .discover-holiday-activity-ideas__discover__ideas__trevelling {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.discover-holiday-activity-ideas__discover__ideas__sport__photo, .discover-holiday-activity-ideas__discover__ideas__wellness__photo, .discover-holiday-activity-ideas__discover__ideas__extreme__photo, .discover-holiday-activity-ideas__discover__ideas__games__photo, .discover-holiday-activity-ideas__discover__ideas__trevelling__photo {
+  width: 300px;
+  height: 310px;
+  margin: 0 10px 19px 10px;
+}
+.discover-holiday-activity-ideas__discover__ideas__sport__text, .discover-holiday-activity-ideas__discover__ideas__wellness__text, .discover-holiday-activity-ideas__discover__ideas__extreme__text, .discover-holiday-activity-ideas__discover__ideas__games__text, .discover-holiday-activity-ideas__discover__ideas__trevelling__text {
+  position: absolute;
+  font-family: "Montserrat_Bold";
+  text-transform: none;
+  font-size: 22px;
+  line-height: 27px;
+  color: #FFFFFF;
+  text-align: center;
+  top: 142px;
+  width: 238px;
+  left: 40px;
+}
+.discover-holiday-activity-ideas__discover__ideas__sport__photo {
+  background-image: url(./images/sport.png);
+}
+.discover-holiday-activity-ideas__discover__ideas__wellness__photo {
+  background-image: url(./images/well.png);
+}
+.discover-holiday-activity-ideas__discover__ideas__extreme__photo {
+  background-image: url(./images/extreme.png);
+}
+.discover-holiday-activity-ideas__discover__ideas__extreme__text {
+  position: absolute;
+  top: 128px;
+  left: 66px;
+  font-family: "Montserrat_Bold";
+  text-transform: none;
+  font-size: 22px;
+  line-height: 27px;
+  color: #FFFFFF;
+  width: 187px;
+  text-align: center;
+}
+.discover-holiday-activity-ideas__discover__ideas__games__photo {
+  background-image: url(./images/games.png);
+}
+.discover-holiday-activity-ideas__discover__ideas__culture, .discover-holiday-activity-ideas__discover__ideas__enjoment {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.discover-holiday-activity-ideas__discover__ideas__culture__photo, .discover-holiday-activity-ideas__discover__ideas__enjoment__photo {
+  width: 620px;
+  height: 310px;
+  margin: 0 10px 19px 10px;
+}
+.discover-holiday-activity-ideas__discover__ideas__culture__text, .discover-holiday-activity-ideas__discover__ideas__enjoment__text {
+  position: absolute;
+  top: 144px;
+  left: 182px;
+  font-family: "Montserrat_Bold";
+  text-transform: none;
+  font-size: 22px;
+  line-height: 27px;
+  color: #FFFFFF;
+  width: 277px;
+  text-align: center;
+}
+.discover-holiday-activity-ideas__discover__ideas__culture__photo {
+  background-image: url(./images/culture.png);
+}
+.discover-holiday-activity-ideas__discover__ideas__enjoment__photo {
+  background-image: url(./images/enjoment.png);
+}
+.discover-holiday-activity-ideas__discover__ideas__trevelling__photo {
+  background-image: url(./images/treveling.png);
+}
+.discover-holiday-activity-ideas__crate {
+  width: 600px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin: auto;
+}
+.discover-holiday-activity-ideas__crate__text {
+  font-family: "Montserrat_Bold";
+  text-transform: none;
+  font-size: 26px;
+  line-height: 32px;
+  color: #444444;
+  text-align: center;
+  margin: 70px 2px 55px 0;
+}
+.discover-holiday-activity-ideas__crate__question {
+  width: 400px;
+  font-family: "Roboto_Light";
+  text-transform: none;
+  font-size: 18px;
+  line-height: 14px;
+  color: #666666;
+  text-align: center;
+  margin: 0 0px 25px 0;
+}
+.discover-holiday-activity-ideas__crate__input {
+  width: 283px;
+  height: 38px;
+  background-color: #FFFFFF;
+  border: 1px solid #D4D4D4;
+  border-radius: 2px;
+  padding: 0 0 0 12px;
+  margin: 0 0 100px 0;
+}
+.discover-holiday-activity-ideas__crate ::-moz-placeholder {
+  font-family: "Roboto_Light";
+  text-transform: none;
+  font-size: 14px;
+  line-height: 16px;
+  color: #999999;
+}
+.discover-holiday-activity-ideas__crate ::placeholder {
+  font-family: "Roboto_Light";
+  text-transform: none;
+  font-size: 14px;
+  line-height: 16px;
+  color: #999999;
+}
+.discover-holiday-activity-ideas__crate__button {
+  width: 170px;
+  height: 40px;
+  background-color: #FF4E50;
+  border: 1px solid #FF4E50;
+  border-radius: 40px;
+  margin: -10px 0 93px 13px;
+}
+.discover-holiday-activity-ideas__crate__button__text {
+  font-family: "Montserrat_Bold";
+  text-transform: none;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+footer {
+  height: 224px;
+  padding: 38px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  border-top: 2px solid #FF4E50;
+}
+footer .drid {
+  display: grid;
+  grid-template-columns: 243px 237px 361px 107px;
+  grid-template-rows: 30px 198px;
+}
+footer .drid__list {
+  display: flex;
+  flex-direction: column;
+}
+footer .drid__list a {
+  text-decoration: none;
+  font-family: "Roboto_Light";
+  text-transform: none;
+  font-size: 14px;
+  line-height: 26px;
+  color: #999999;
+}
+footer .drid__pink_dreamshare {
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  color: #FF4E50;
+  margin: 0 0 0 3px;
+}
+footer .drid__company, footer .drid__partners {
+  font-family: "Montserrat_Bold";
+  text-transform: none;
+  font-size: 14px;
+  line-height: 17px;
+  color: #444444;
+}
+footer .drid__partners {
+  margin: 0 0 0 3px;
+}
+footer .drid__designed_by {
+  font-family: "Montserrat_Bold";
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 12px;
+  color: #CCCCCC;
+  margin: 0 0 0 12px;
+  letter-spacing: 2px;
+}
+footer .drid__logo {
+  width: 110px;
+  height: 24px;
+  background-image: url(./images/logo.png);
+  background-size: 100% 100%;
+  margin: -10px 0 0 -8px;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1439px) {
+  header {
+    width: 768px;
+    height: 700px;
+    background-size: cover;
+  }
+  header .header-nav__log {
+    margin: 40px 19px 0px 0px;
+  }
+  header .header-nav__sign {
+    margin: 40px 50px 0 0;
+  }
+  header .dreamshare {
+    margin: -30px 0 0 48px;
+  }
+  header .share-your-dream {
+    margin: 153px auto 28px;
+  }
+  header .button-find {
+    margin: 35px 0 0 272px;
+  }
+  .how-dreamshare-works__steps__text {
+    font-family: "Montserrat_Bold";
+    text-transform: none;
+    font-size: 22px;
+    line-height: 27px;
+    color: #444444;
+    margin: 94px 0 35px 0;
+  }
+  .how-dreamshare-works__steps__pictures__step_1__image1, .how-dreamshare-works__steps__pictures__step_1__image2, .how-dreamshare-works__steps__pictures__step_1__image3, .how-dreamshare-works__steps__pictures__step_2__image1, .how-dreamshare-works__steps__pictures__step_2__image2, .how-dreamshare-works__steps__pictures__step_2__image3, .how-dreamshare-works__steps__pictures__step_3__image1, .how-dreamshare-works__steps__pictures__step_3__image2, .how-dreamshare-works__steps__pictures__step_3__image3 {
+    width: 236px;
+    height: 400px;
+  }
+  .how-dreamshare-works__steps__pictures__step_1__image1, .how-dreamshare-works__steps__pictures__step_2__image1, .how-dreamshare-works__steps__pictures__step_3__image1 {
+    background-image: url(./images/step-1medium.png);
+  }
+  .how-dreamshare-works__steps__pictures__step_1__image2, .how-dreamshare-works__steps__pictures__step_2__image2, .how-dreamshare-works__steps__pictures__step_3__image2 {
+    background-image: url(./images/step2-medium.png);
+  }
+  .how-dreamshare-works__steps__pictures__step_1__image3, .how-dreamshare-works__steps__pictures__step_2__image3, .how-dreamshare-works__steps__pictures__step_3__image3 {
+    background-image: url(./images/step3_medium.png);
+  }
+  .how-dreamshare-works__steps__pictures__step_1__item__button, .how-dreamshare-works__steps__pictures__step_3__item__button {
+    top: 206px;
+    left: 31px;
+  }
+  .how-dreamshare-works__steps__pictures__step_1__item__sed, .how-dreamshare-works__steps__pictures__step_3__item__sed {
+    width: 196px;
+    font-family: "Montserrat_Bold";
+    text-transform: none;
+    font-size: 24px;
+    line-height: 14px;
+    color: #FFFFFF;
+    top: 272px;
+    left: 31px;
+  }
+  .how-dreamshare-works__steps__pictures__step_1__item__quisque, .how-dreamshare-works__steps__pictures__step_3__item__quisque {
+    width: 196px;
+    font-family: "Roboto_Light";
+    text-transform: none;
+    font-size: 14px;
+    line-height: 14px;
+    color: #E3E3E3;
+    position: absolute;
+    top: 327px;
+    left: 31px;
+  }
+  .how-dreamshare-works__steps__pictures__step_2__item__button {
+    top: 257px;
+    left: 31px;
+  }
+  .how-dreamshare-works__steps__pictures__step_2__item__morbi {
+    width: 196px;
+    font-family: "Montserrat_Bold";
+    text-transform: none;
+    font-size: 24px;
+    line-height: 14px;
+    color: #FFFFFF;
+    top: 291px;
+    left: 31px;
+  }
+  .how-dreamshare-works__steps__pictures__step_2__item__nulla {
+    width: 196px;
+    font-family: "Roboto_Light";
+    text-transform: none;
+    font-size: 14px;
+    line-height: 14px;
+    color: #E3E3E3;
+    position: absolute;
+    top: 341px;
+    left: 31px;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__text {
+    font-family: "Montserrat_Bold";
+    text-transform: none;
+    font-size: 22px;
+    line-height: 27px;
+    color: #444444;
+    margin: 94px 0 0 0px;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 521px;
+    width: 492px;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people__bradley, .meet-a-partner-for-your-best-holiday__partner__people__marie, .meet-a-partner-for-your-best-holiday__partner__people__diana, .meet-a-partner-for-your-best-holiday__partner__people__christopher {
+    width: 236px;
+    height: 205px;
+    display: flex;
+    flex-flow: column;
+    margin: 0 10px 0 10px;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people__bradley__name, .meet-a-partner-for-your-best-holiday__partner__people__marie__name, .meet-a-partner-for-your-best-holiday__partner__people__diana__name, .meet-a-partner-for-your-best-holiday__partner__people__christopher__name {
+    margin: 17px 0 27px 0;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people__bradley {
+    margin: 0 0 57px 0;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people__bradley__photo {
+    margin: 9px 0 0 58px;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people__bradley__icon {
+    top: 119px;
+    left: 143px;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people__bradley__info {
+    width: 236px;
+    margin: -5px 0px 0px 0px;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people__marie__photo {
+    margin: 5px 0 0 58px;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people__marie__info {
+    width: 236px;
+    margin: -5px 0px 0px 0px;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people__marie__icon {
+    top: 378px;
+    left: 142px;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people__diana {
+    margin: 0 0 57px 0;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people__diana__photo {
+    margin: 9px 0 0 58px;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people__diana__info {
+    width: 236px;
+    margin: 0px 0px 0px 0px;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people__diana__icon {
+    top: 119px;
+    left: 399px;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people__christopher__photo {
+    margin: 5px 0 0 58px;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people__christopher__info {
+    width: 238px;
+    margin: -5px 0px 0px 0px;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people__christopher__icon {
+    top: 379px;
+    left: 399px;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__button {
+    margin: 19px 0 0 4px;
+  }
+  .discover-holiday-activity-ideas__discover__text {
+    font-family: "Montserrat_Bold";
+    text-transform: none;
+    font-size: 22px;
+    line-height: 27px;
+    color: #444444;
+    margin: 94px 0 35px 0;
+  }
+  .discover-holiday-activity-ideas__discover__ideas {
+    width: 765px;
+  }
+  .discover-holiday-activity-ideas__discover__ideas__sport__photo, .discover-holiday-activity-ideas__discover__ideas__wellness__photo, .discover-holiday-activity-ideas__discover__ideas__extreme__photo, .discover-holiday-activity-ideas__discover__ideas__games__photo, .discover-holiday-activity-ideas__discover__ideas__trevelling__photo {
+    width: 236px;
+    height: 310px;
+    margin: 0px 0px 0px 0px;
+  }
+  .discover-holiday-activity-ideas__discover__ideas__sport__photo {
+    background-image: url(./images/sport-medium.png);
+    margin: 0px 20px 20px 0px;
+  }
+  .discover-holiday-activity-ideas__discover__ideas__sport__text {
+    top: 114px;
+    width: 143px;
+    left: 48px;
+  }
+  .discover-holiday-activity-ideas__discover__ideas__wellness__photo {
+    background-image: url(./images/wellness-medium.png);
+    margin: 0px 0px 20px 0px;
+  }
+  .discover-holiday-activity-ideas__discover__ideas__wellness__text {
+    top: 127px;
+    width: 158px;
+    left: 40px;
+  }
+  .discover-holiday-activity-ideas__discover__ideas__extreme__photo {
+    background-image: url(./images/extreme-medium.png);
+    margin: 0px 0px 20px 20px;
+  }
+  .discover-holiday-activity-ideas__discover__ideas__extreme__text {
+    top: 128px;
+    left: 25px;
+    width: 226px;
+  }
+  .discover-holiday-activity-ideas__discover__ideas__games__photo {
+    background-image: url(./images/games-medium.png);
+    margin: 0px 20px 20px 0px;
+  }
+  .discover-holiday-activity-ideas__discover__ideas__games__text {
+    top: 141px;
+    left: 5px;
+    width: 226px;
+  }
+  .discover-holiday-activity-ideas__discover__ideas__culture, .discover-holiday-activity-ideas__discover__ideas__enjoment {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .discover-holiday-activity-ideas__discover__ideas__culture__photo, .discover-holiday-activity-ideas__discover__ideas__enjoment__photo {
+    width: 492px;
+    height: 310px;
+    margin: 0px 0px 20px 0px;
+  }
+  .discover-holiday-activity-ideas__discover__ideas__culture__text, .discover-holiday-activity-ideas__discover__ideas__enjoment__text {
+    top: 141px;
+    left: 110px;
+    width: 277px;
+  }
+  .discover-holiday-activity-ideas__discover__ideas__culture__photo {
+    background-image: url(./images/culture-medium.png);
+  }
+  .discover-holiday-activity-ideas__discover__ideas__enjoment__photo {
+    background-image: url(./images/enjoy-medium.png);
+  }
+  .discover-holiday-activity-ideas__discover__ideas__trevelling__photo {
+    background-image: url(./images/traveling-medium.png);
+    margin: -20px 0px 0px 20px;
+  }
+  .discover-holiday-activity-ideas__discover__ideas__trevelling__text {
+    top: 121px;
+    width: 238px;
+    left: 20px;
+  }
+  .discover-holiday-activity-ideas__crate {
+    width: 490px;
+  }
+  .discover-holiday-activity-ideas__crate__text {
+    font-family: "Montserrat_Bold";
+    text-transform: none;
+    font-size: 22px;
+    line-height: 27px;
+    color: #444444;
+    margin: 73px -2px 54px 0;
+  }
+  .discover-holiday-activity-ideas__crate__question {
+    width: 400px;
+    margin: 0 -5px 25px 0;
+  }
+  .discover-holiday-activity-ideas__crate__input {
+    width: 282px;
+    height: 38px;
+    padding: 0 0 0 15px;
+  }
+  .discover-holiday-activity-ideas__crate__button {
+    margin: 0 0 100px 15px;
+  }
+  footer {
+    padding: 38px 0 0 0;
+  }
+  footer .drid {
+    display: grid;
+    grid-template-columns: 207px 205px 211px 120px;
+    grid-template-rows: 30px 198px;
+  }
+  footer .drid__list {
+    margin: 0 0 0 48px;
+  }
+  footer .drid__pink_dreamshare {
+    margin: 0 0 0 27px;
+  }
+  footer .drid__company {
+    margin: 0 0 0 48px;
+  }
+  footer .drid__partners {
+    margin: 0 0 0 12px;
+  }
+  footer .drid__designed_by {
+    margin: 1px 0 0 13px;
+    letter-spacing: 1px;
+  }
+  footer .drid__logo {
+    margin: -11px 0 0 -17px;
+  }
+}
+@media screen and (min-width: 250px) and (max-width: 767px) {
+  header {
+    width: 320px;
+    height: 540px;
+    background-image: url(./images/Backgroundmobile.png);
+  }
+  header .header-nav__log {
+    margin: 22px 19px 0px 0px;
+  }
+  header .header-nav__sign {
+    margin: 20px 84px 0 0;
+  }
+  header .dreamshare {
+    margin: 97px 0 0 95px;
+  }
+  header .share-your-dream {
+    width: 272px;
+    font-family: "Montserrat_Bold";
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 37px;
+    color: #FFFFFF;
+    margin: 26px 20px 8px 32px;
+  }
+  header .find-partner {
+    width: 272px;
+    font-family: "Roboto_Light";
+    text-transform: none;
+    font-size: 18px;
+    line-height: 24.5px;
+    color: #F7F3F2;
+    margin: 0 0px 0 33px;
+  }
+  header .button-find {
+    width: 280px;
+    height: 40px;
+    margin: 15px 0 0 30px;
+  }
+  .how-dreamshare-works__steps__text {
+    font-family: "Montserrat_Bold";
+    text-transform: none;
+    font-size: 22px;
+    line-height: 27px;
+    color: #444444;
+    margin: 34px 0 15px 0;
+  }
+  .how-dreamshare-works__steps__pictures {
+    flex-direction: column;
+  }
+  .how-dreamshare-works__steps__pictures__step_1, .how-dreamshare-works__steps__pictures__step_2, .how-dreamshare-works__steps__pictures__step_3 {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+  }
+  .how-dreamshare-works__steps__pictures__step_1__image1, .how-dreamshare-works__steps__pictures__step_1__image2, .how-dreamshare-works__steps__pictures__step_1__image3, .how-dreamshare-works__steps__pictures__step_2__image1, .how-dreamshare-works__steps__pictures__step_2__image2, .how-dreamshare-works__steps__pictures__step_2__image3, .how-dreamshare-works__steps__pictures__step_3__image1, .how-dreamshare-works__steps__pictures__step_3__image2, .how-dreamshare-works__steps__pictures__step_3__image3 {
+    height: 240px;
+    margin: 0 0px 10px 0px;
+  }
+  .how-dreamshare-works__steps__pictures__step_1__image1, .how-dreamshare-works__steps__pictures__step_2__image1, .how-dreamshare-works__steps__pictures__step_3__image1 {
+    background-image: url(./images/step1mobile.png);
+  }
+  .how-dreamshare-works__steps__pictures__step_1__image2, .how-dreamshare-works__steps__pictures__step_2__image2, .how-dreamshare-works__steps__pictures__step_3__image2 {
+    background-image: url(./images/step2mobile.png);
+  }
+  .how-dreamshare-works__steps__pictures__step_1__image3, .how-dreamshare-works__steps__pictures__step_2__image3, .how-dreamshare-works__steps__pictures__step_3__image3 {
+    background-image: url(./images/step3mobile.png);
+  }
+  .how-dreamshare-works__steps__pictures__step_1__item__button, .how-dreamshare-works__steps__pictures__step_3__item__button {
+    top: 65px;
+    left: 19px;
+  }
+  .how-dreamshare-works__steps__pictures__step_1__item__sed, .how-dreamshare-works__steps__pictures__step_3__item__sed {
+    font-family: "Montserrat_Bold";
+    text-transform: none;
+    font-size: 24px;
+    line-height: 14px;
+    color: #FFFFFF;
+    top: 130px;
+    left: 19px;
+  }
+  .how-dreamshare-works__steps__pictures__step_1__item__quisque, .how-dreamshare-works__steps__pictures__step_3__item__quisque {
+    top: 183px;
+    left: 19px;
+  }
+  .how-dreamshare-works__steps__pictures__step_2__item__button {
+    top: 96px;
+    left: 19px;
+  }
+  .how-dreamshare-works__steps__pictures__step_2__item__morbi {
+    top: 140px;
+    left: 19px;
+  }
+  .how-dreamshare-works__steps__pictures__step_2__item__nulla {
+    top: 183px;
+    left: 19px;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__text {
+    font-family: "Montserrat_Bold";
+    text-transform: none;
+    font-size: 22px;
+    line-height: 27px;
+    color: #444444;
+    margin: 26px 0 0 0px;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people {
+    flex-direction: column;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people__bradley, .meet-a-partner-for-your-best-holiday__partner__people__marie, .meet-a-partner-for-your-best-holiday__partner__people__diana, .meet-a-partner-for-your-best-holiday__partner__people__christopher {
+    width: 236px;
+    display: flex;
+    flex-flow: column;
+    margin: 0 0 0px 0;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people__bradley__name, .meet-a-partner-for-your-best-holiday__partner__people__marie__name, .meet-a-partner-for-your-best-holiday__partner__people__diana__name, .meet-a-partner-for-your-best-holiday__partner__people__christopher__name {
+    margin: 18px 0 0 -2px;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people__bradley__photo, .meet-a-partner-for-your-best-holiday__partner__people__marie__photo {
+    margin: 14px 0 0 57px;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people__bradley__info, .meet-a-partner-for-your-best-holiday__partner__people__marie__info {
+    width: 246px;
+    margin: 22px 0px 0px -6px;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people__bradley {
+    order: 1;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people__bradley__icon {
+    top: 98px;
+    left: 141px;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people__marie {
+    order: 3;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people__marie__icon {
+    top: 559px;
+    left: 141px;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people__marie__info {
+    width: 238px;
+    margin: 23px 0px 0px -2px;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people__diana {
+    order: 2;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people__diana__photo {
+    margin: 16px 0 0 57px;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people__diana__info {
+    width: 236px;
+    margin: 28px 0px 0px -1px;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people__diana__icon {
+    top: 319px;
+    left: 141px;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people__christopher {
+    order: 4;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people__christopher__photo {
+    margin: 16px 0 0 57px;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people__christopher__info {
+    width: 236px;
+    margin: 22px 0px 0px -1px;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__people__christopher__icon {
+    top: 781px;
+    left: 141px;
+  }
+  .meet-a-partner-for-your-best-holiday__partner__button {
+    width: 280px;
+    margin: 37px 0 0 1px;
+  }
+  .discover-holiday-activity-ideas__discover__text {
+    width: 280px;
+    font-family: "Montserrat_Bold";
+    text-transform: none;
+    font-size: 22px;
+    line-height: 27px;
+    color: #444444;
+    margin: 35px 0 33px 0;
+  }
+  .discover-holiday-activity-ideas__discover__ideas {
+    width: 300px;
+    flex-direction: column;
+  }
+  .discover-holiday-activity-ideas__discover__ideas__sport__photo, .discover-holiday-activity-ideas__discover__ideas__wellness__photo, .discover-holiday-activity-ideas__discover__ideas__extreme__photo, .discover-holiday-activity-ideas__discover__ideas__games__photo, .discover-holiday-activity-ideas__discover__ideas__trevelling__photo, .discover-holiday-activity-ideas__discover__ideas__culture__photo, .discover-holiday-activity-ideas__discover__ideas__enjoment__photo {
+    width: 300px;
+    height: 120px;
+    margin: 0 0px 10px 0px;
+  }
+  .discover-holiday-activity-ideas__discover__ideas__sport__photo {
+    background-image: url(./images/sportmobile.png);
+  }
+  .discover-holiday-activity-ideas__discover__ideas__sport__text {
+    width: 206px;
+    top: 20px;
+    left: 46px;
+  }
+  .discover-holiday-activity-ideas__discover__ideas__wellness__photo {
+    background-image: url(./images/wellnessmobile.png);
+  }
+  .discover-holiday-activity-ideas__discover__ideas__wellness__text {
+    width: 206px;
+    top: 32px;
+    left: 46px;
+  }
+  .discover-holiday-activity-ideas__discover__ideas__extreme__photo {
+    background-image: url(./images/extrememobile.png);
+  }
+  .discover-holiday-activity-ideas__discover__ideas__extreme__text {
+    top: 33px;
+    left: 56px;
+    width: 187px;
+  }
+  .discover-holiday-activity-ideas__discover__ideas__games__photo {
+    background-image: url(./images/gamesmobile.png);
+  }
+  .discover-holiday-activity-ideas__discover__ideas__games__text {
+    top: 47px;
+    width: 199px;
+    left: 49px;
+  }
+  .discover-holiday-activity-ideas__discover__ideas__culture__photo {
+    background-image: url(./images/culturemobile.png);
+  }
+  .discover-holiday-activity-ideas__discover__ideas__culture__text {
+    top: 47px;
+    left: 11px;
+    width: 277px;
+  }
+  .discover-holiday-activity-ideas__discover__ideas__enjoment__photo {
+    background-image: url(./images/enjoymobile.png);
+  }
+  .discover-holiday-activity-ideas__discover__ideas__enjoment__text {
+    top: 46px;
+    left: 11px;
+    width: 277px;
+  }
+  .discover-holiday-activity-ideas__discover__ideas__trevelling__photo {
+    background-image: url(./images/trevelmobile.png);
+  }
+  .discover-holiday-activity-ideas__discover__ideas__trevelling__text {
+    top: 46px;
+    width: 238px;
+    left: 31px;
+  }
+  .discover-holiday-activity-ideas__crate {
+    width: 280px;
+  }
+  .discover-holiday-activity-ideas__crate__text {
+    font-family: "Montserrat_Bold";
+    text-transform: none;
+    font-size: 22px;
+    line-height: 27px;
+    color: #444444;
+    margin: 24px 2px 20px 0;
+  }
+  .discover-holiday-activity-ideas__crate__question {
+    width: 280px;
+    margin: 0 -1px 14px 0;
+  }
+  .discover-holiday-activity-ideas__crate__input {
+    width: 280px;
+    height: 38px;
+    padding: 4px 0 0 14px;
+  }
+  .discover-holiday-activity-ideas__crate__button {
+    width: 280px;
+    margin: 7px auto 42px;
+    padding: 5px 0 0 8px;
+  }
+  footer {
+    height: 226px;
+    padding: 0px 0 0px 0;
+  }
+  footer .drid {
+    grid-template-columns: 226px;
+    grid-template-rows: 25px 17px 52px 17px 0px 14px 0px 24px;
+  }
+  footer .drid__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    order: 3;
+    width: 250px;
+    margin: -79px 0 28px -15px;
+  }
+  footer .drid__list a {
+    margin: 0 5px 0 9px;
+  }
+  footer .drid__pink_dreamshare {
+    margin: -61px 0 0 53px;
+    order: 1;
+  }
+  footer .drid__company {
+    margin: -81px 0 0 76px;
+    order: 2;
+  }
+  footer .drid__partners {
+    order: 4;
+    margin: -21px 0 0 80px;
+  }
+  footer .drid__designed_by {
+    order: 5;
+    margin: -3px 0 0 72px;
+    letter-spacing: 1px;
+  }
+  footer .drid__logo {
+    order: 6;
+    margin: 14px 0 0 57px;
+  }
+}/*# sourceMappingURL=main.css.map */
